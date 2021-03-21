@@ -1,15 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css" integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/grids-responsive-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/base-min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <title>Dexter Watson</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>      
+        body {
+            margin-left: 1%;
+            margin-right: 1%;
+        }
+
+        *{font-family:VT323;}
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
 </head>
 <body>
-
-<h1>This is the start of my website.</h1>
-<p>More stuff will be added. I really like this image:</p>
-<img src="hedgehog.jpg" alt="picture">
-
+    <div class="pure-g">
+        <div class="pure-u-1"><p>
+            <h1>
+                Dexter Watson
+            </h1>
+            <h2>
+                Welcome to my webiste :)
+            </h2>
+        </p></div>
+        <div class="pure-u-1-5 pure-u-md-1-5"><p>
+            <p>
+                I really like this image:
+                <img class="pure-img" src="hedgehog.jpg" alt="picture">
+            </p>
+        </p></div>
+        <div class="pure-u-1-5 pure-u-md-3-5"><p>
+            <h2>
+                About the website
+            </h2>
+            <p>This static website was created using <a href="https://purecss.io/" target="_blank">Pure.CSS</a> and is hosted in <a href="https://azure.microsoft.com/en-gb/overview/what-is-azure/" target="_blank">Microsoft Azure</a>. 
+                The purpose was to be able to host an 'about me' site for virtually nothing.
+                The estimated monthly costs are ~£0.01.</p>
+            <h2>
+                How does it work?
+            </h2>
+            <p>
+                I write the website as you would expect in HTML, CSS and JavaScript. But instead of paying someone else to host it, I have a storage account in Azure with a publicly readable blob containing the files for the website. 
+            </p>
+            <h2>
+                Why is it so cheap?
+            </h2>
+            <p>
+                The main costs of a storage account are the size of the data and the number of writes, in my case the majority of the usage will come from reads, and the total size of the files will be minimal. This results in ultra-low running costs. 
+            </p>
+        </p></div>
+        <div class="pure-u-1-5 pure-u-md-1-5"><p>Column3</p></div>
+    </div>
 </body>
 </html>
